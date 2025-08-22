@@ -1,4 +1,5 @@
 # Filename: 2_run_automl.py
+import os
 import h2o
 from h2o.automl import H2OAutoML
 
@@ -29,7 +30,6 @@ model_path = h2o.save_model(model=aml.leader, path="./models", force=True)
 print(f"Original saved model path: {model_path}")
 
 # Rename the folder to a friendly name
-import os
 new_path = os.path.join("./models", custom_name)
 os.rename(model_path, new_path)
 print(f"Renamed model path: {new_path}")
