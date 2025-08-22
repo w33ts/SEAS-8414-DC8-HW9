@@ -17,7 +17,7 @@ End-to-end tool that:
 1) Python 3.10+
 2) Install dependencies (example):
 ```
-pip install h2o pandas shap aiohttp matplotlib
+pip install -r requirements.txt
 ```
 On first import, H2O will download a compatible Java runtime automatically if needed.
 
